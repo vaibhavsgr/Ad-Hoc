@@ -1,0 +1,28 @@
+from selenium import webdriver
+
+class FKart(object):
+    self.url="https://www.flipkart.com"
+    self.xpaths = { 'usernameTxtBox' : "//input[@name='username']",
+               'passwordTxtBox' : "//input[@name='password']",
+               'submitButton' :   "//input[@name='login']",
+               'searchBox' : "//input[@type='text']"}
+    
+    def Launch(self):
+        driver = webdriver.Chrome()
+        driver.maximize_window()
+        driver.get(self.url)
+
+    def searchItem(self, searchFor='laptops'):
+        driver.find_element_by_xpath(self.xpaths['searchBox']).clear()
+        driver.find_element_by_xpath(self.xpaths['searchBox']).send_keys(searchFor)
+        driver.find_element_by_xpath(self.xpaths['submitButton']).click()
+
+if __name__=='__main__':
+    flip = Fkart()
+    flip.Launch()
+    flip.searchItem()
+
+
+
+
+    

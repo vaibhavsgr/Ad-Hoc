@@ -1,0 +1,21 @@
+
+
+def find_gcd(x, y):
+     
+    while(y):
+        x, y = y, x % y
+     
+    return x
+
+
+if __name__ == "__main__":
+    t = int(raw_input("Enter no of test cases "))
+    for i in xrange (0, t-1):
+        a = []
+        n = int(raw_input("Enter the size of testcase {}".i))
+        print "Enter {1} elements for testcase {2}".format(1=n,2=i)
+        for e in xrange (0, n-1):
+            a.append(raw_input())
+
+        print a
+    
