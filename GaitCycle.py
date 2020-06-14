@@ -150,26 +150,34 @@ def printGraph(X_train, X_test, Y_train, Y_test, poly, X):
     #Plotting Young Slow
     plt.plot(x_axis['Gait Cycle'],y_axis_ys, 'b-')
     plt.plot(x_axis['Pred'],y_axis_ys, 'r-')
+    plt.show()
 
-    #Plotting Young Slow
+    #Plotting Young Medium
     plt.plot(x_axis['Gait Cycle'],y_axis_ym, 'b-')
     plt.plot(x_axis['Pred'],y_axis_ym, 'r-')
+    plt.show()
 
-    #Plotting Young Slow
+    #Plotting Young  Fast
     plt.plot(x_axis['Gait Cycle'],y_axis_yf, 'b-')
     plt.plot(x_axis['Pred'],y_axis_yf, 'r-')
+    plt.show()
 
-    #Plotting Young Slow
+    #Plotting Adult Slow
     plt.plot(x_axis['Gait Cycle'],y_axis_as, 'b-')
     plt.plot(x_axis['Pred'],y_axis_as, 'r-')
+    plt.show()
 
-    #Plotting Young Slow
+    #Plotting Adult Medium
     plt.plot(x_axis['Gait Cycle'],y_axis_am, 'b-')
     plt.plot(x_axis['Pred'],y_axis_am, 'r-')
+    plt.show()
 
-    #Plotting Young Slow
+    #Plotting Adult Fast
     plt.plot(x_axis['Gait Cycle'],y_axis_af, 'b-')
     plt.plot(x_axis['Pred'],y_axis_af, 'r-')
+    plt.show()
+
+    plt.show()
 
     return True
 
